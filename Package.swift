@@ -20,10 +20,16 @@ let package = Package(
         .target(
             name: "SwiftyRSA",
             dependencies: [],
-            path: "Source"),
+            path: "Source",
+            exclude: [
+                "NSData+SHA.m"
+            ]),
         .testTarget(
             name: "SwiftyRSATests",
             dependencies: ["SwiftyRSA"],
-            path: "Source"),
+            path: "Source",
+            exclude: [
+                "NSData+SHA.m"
+            ]),
     ]
 )
