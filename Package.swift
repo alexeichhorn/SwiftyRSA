@@ -20,7 +20,7 @@ let package = Package(
         .target(
             name: "SwiftyRSA",
             dependencies: [],
-            sources: ["Source"]),
+            path: "Source"),
         .testTarget(
             name: "SwiftyRSATests",
             dependencies: ["SwiftyRSA"]),
